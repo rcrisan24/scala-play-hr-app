@@ -34,6 +34,7 @@ class EmployeeController @Inject()(employeeRepo: EmployeeRepository,
         val role = json("role").as[String]
 
         println(s"Decomposing json $name $email $role")
+
         employeeRepo.insert(name, email, role)
         Created(json.toString)
       }

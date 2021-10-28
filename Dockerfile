@@ -13,5 +13,5 @@ COPY . /root/app/
 WORKDIR /root/app
 RUN sbt compile && sbt test:compile
 
-EXPOSE 9000 9443
+EXPOSE 9000 9443 5432
 CMD ["sbt"]
