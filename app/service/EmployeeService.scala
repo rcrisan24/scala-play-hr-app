@@ -1,4 +1,6 @@
-package models
+package service
+
+import models.Employee
 
 trait EmployeeService {
   def findAll() = {
